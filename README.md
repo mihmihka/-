@@ -78,10 +78,10 @@ systemctl enable sshd.service
 vim /etc/openssh/sshd_config
 
 В нем раскомментировать 2 строки:
-# Authentication:
+#Authentication:
 #LoginGraceTime 2m
 PermitRootLogin yes
-# To disable tunneled clear text passwords, change to no here!
+#To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication yes
 
 Сохранить правки - перезапустить сервис ssh.
@@ -104,10 +104,10 @@ apt-get install docker-engine-rootless
 •	Установите хранилище данных nextcloud.
 •	Настройте пользователя USER_RESU с паролем P@ssw0rd для доступа с клиентского компьютера
 
-# apt-get install deploy
-# deploy nextcloud
+#apt-get install deploy
+#deploy nextcloud
 ПАРОЛЬ ДЛЯ АДМИНСКОГО ВХОДА
-# journalctl -b |grep admin-pass
+#journalctl -b |grep admin-pass
 deploy nextcloud password=5Z4SAq2U28rWyVz
 
 Смотрим и ищем пароль
@@ -151,8 +151,8 @@ apt-get install yandex-browser-stable
 •	Установите хранилище данных nextcloud.
 •	Настройте пользователя USER_RESU с паролем P@ssw0rd для доступа с клиентского компьютера
 Пуск- Центр Приложений
-# apt-get install deploy
-# deploy nextcloud
+#apt-get install deploy
+#deploy nextcloud
 Заходим на сайт
 http://localhost/nextcloud
 Логин: USER_RESU
